@@ -3,14 +3,9 @@ package ru.netology;
 public class LandPlot {
     public static long idMain = 0;
 
-    private long id;
-    private double length;
-    private double width;
-    private long sellPrice;
-
-    public long getId() {
-        return id;
-    }
+    private final double length;
+    private final double width;
+    private final long sellPrice;
 
     public double getLength() {
         return length;
@@ -25,11 +20,9 @@ public class LandPlot {
     }
 
     public LandPlot(double length, double width, long sellPrice) {
-        this.id = ++idMain;
         this.length = length;
         this.width = width;
         this.sellPrice = sellPrice;
-
 
     }
 
